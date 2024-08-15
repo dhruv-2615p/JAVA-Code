@@ -10,8 +10,8 @@ class Box {
     double depth;
 
     // Display volume
-    void volume(){
-        System.out.println("Voulme is " + (width * height * depth));
+    double volume(){
+        return width * height * depth;
     }
 }
 
@@ -23,6 +23,7 @@ public class BoxWithMethod {
     public static void main(String[] args){
         Box myBox1 = new Box();
         Box myBox2 = new Box();
+        double vol;
 
         // assign values to myBox1's instance variables
         myBox1.width = 10;
@@ -35,9 +36,11 @@ public class BoxWithMethod {
         myBox2.height = 9;
 
         // display volume of first box
-        myBox1.volume();
+        vol = myBox1.volume();
+        System.out.println("Volume is: " + vol);
         
         // display volume of second box
-        myBox2.volume();
+        vol = myBox2.volume();
+        System.out.println("Volume is: " + vol);
     }
 }
