@@ -9,10 +9,10 @@ class Box {
     double height;
     double depth;
 
-    Box(double w, double h, double d){
-        width = w;
-        height = h;
-        depth = d;
+    Box(double width, double height, double depth){
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
     }
 
     // Display volume
