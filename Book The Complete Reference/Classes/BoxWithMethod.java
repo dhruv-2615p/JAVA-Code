@@ -9,6 +9,12 @@ class Box {
     double height;
     double depth;
 
+    Box(){
+        width = 10;
+        height = 10;
+        depth = 10;
+    }
+
     // Display volume
     double volume(){
         return width * height * depth;
@@ -24,16 +30,6 @@ public class BoxWithMethod {
         Box myBox1 = new Box();
         Box myBox2 = new Box();
         double vol;
-
-        // assign values to myBox1's instance variables
-        myBox1.width = 10;
-        myBox1.depth = 20;
-        myBox1.height = 15;
-
-        /* assign different values to myBox2's instance variable */
-        myBox2.width = 3;
-        myBox2.depth = 6;
-        myBox2.height = 9;
 
         // display volume of first box
         vol = myBox1.volume();
