@@ -9,7 +9,7 @@ class A {
 
     // display i and j
     void show() {
-        System.err.println("i and j: " + i + " " + j);
+        System.out.println("i and j: " + i + " " + j);
     }
 }
 
@@ -24,11 +24,11 @@ class B extends A {
     // display k overrides show () in A
     void show() {
         // super.show();   // this show invoke A's show() if needed 
-        System.err.println("k: " + k);
+        System.out.println("k: " + k);
     }
 }
 
-public class Override {
+public class OverrideC {
     public static void main(String[] args) {
         B b = new B(1, 2, 3);
         b.show(); 
