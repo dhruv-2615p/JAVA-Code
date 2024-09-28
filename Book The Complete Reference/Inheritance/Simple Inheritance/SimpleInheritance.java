@@ -14,7 +14,7 @@ class A{
 
 class B extends A{
     int k;
-
+    int i = 20;
     void showK(){
         System.err.println("k: " + k);
     }
@@ -26,17 +26,17 @@ class B extends A{
 
 public class SimpleInheritance {
     public static void main(String[] args) {
-        A superOb = new A();
+        /* A superOb = new A();
         B subOb = new B();
 
         // The superclass may be used by itself
         superOb.i = 10;
         superOb.j = 20;
         System.err.println("Contents of superOb: ");
-        superOb.showij();
+        superOb.showij(); */
 
-        /* The subclass has access to all public members of it's superclass */
-        subOb.i = 7;
+        /* The subclass has access to all public members of it's superclass */ 
+        /* subOb.i = 7;
         subOb.j = 8;
         subOb.k = 9;
 
@@ -46,6 +46,6 @@ public class SimpleInheritance {
         System.err.println();
 
         System.err.println("Sum of i, j and k in subOb: ");
-        subOb.sum();
+        subOb.sum(); */
     }
 }
